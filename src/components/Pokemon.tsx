@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useGetPokemonByNameQuery } from '../services/api';
 
 const Pokemon = () => {
-  const { data, error, isLoading } = useGetPokemonByNameQuery("pikachu");
+  const { data, error, isLoading } = useGetPokemonByNameQuery("bulbasaur");
   useEffect(() => {
     console.log(data);
   }, [data]);
